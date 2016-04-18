@@ -8,4 +8,10 @@
     <string name="user_name">用户名</string>
     <string name="pass_word">密码</string>
     <string name="login">登陆</string>
+    <string name="title_activity_sign">SignActivity</string>
+    <string name="user_real_name">姓名</string>
+    <string name="mobile_phone">手机号</string>
+    <string name="sign">注册</string>
+    <string name="forget_password">忘记密码？</string>
+    <string name="new_user_sign">新用户？注册</string>
 </resources>

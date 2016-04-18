@@ -1,4 +1,4 @@
-package com.binbin.payapp;
+package com.binbin.activity;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

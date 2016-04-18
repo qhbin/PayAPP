@@ -1,12 +1,13 @@
-package com.binbin.payapp;
+package com.binbin.activity;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.view.View.OnClickListener;
+import android.widget.TextView;
 
 import com.binbin.client.Connector;
 import com.binbin.commom.util.Encode;
@@ -21,7 +22,7 @@ public class LoginActivity extends Activity implements OnClickListener  {
     private EditText et_username = null;
     private EditText et_password = null;
     private Button bt_login = null;
-    private Button bt_regist = null;
+    private TextView et_register = null;
     private String m_sUserName = null;
     private String m_sPassword = null;
     private Connector m_conn = null;
@@ -33,17 +34,13 @@ public class LoginActivity extends Activity implements OnClickListener  {
     }
 
 
-  /*  @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_login, menu);
-        return true;
-    }*/
     public void initView(){
         et_username = (EditText)findViewById(R.id.username);
         et_password = (EditText)findViewById(R.id.password);
+        et_register = (TextView)findViewById(R.id.user_sign);
         bt_login = (Button)findViewById(R.id.login);
-        bt_login.setOnClickListener((android.view.View.OnClickListener) this);
+        bt_login.setOnClickListener(this);
+        et_register.setOnClickListener(this);
 
     }
 
@@ -53,6 +50,7 @@ public class LoginActivity extends Activity implements OnClickListener  {
                 submit();
                 break;
             default:
+                goRegister();
                 break;
         }
     }
@@ -86,18 +84,10 @@ public class LoginActivity extends Activity implements OnClickListener  {
 
     }
 
-   /* @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
+    protected void  goRegister(){
+        Intent intent = new Intent();
+        intent.setClass(this,SignActivity.class);
+        startActivity(intent);
+    }
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }*/
 }
