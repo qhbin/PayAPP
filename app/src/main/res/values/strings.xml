@@ -14,4 +14,6 @@
     <string name="sign">注册</string>
     <string name="forget_password">忘记密码？</string>
     <string name="new_user_sign">新用户？注册</string>
+    <string name="title_activity_rset_password">RsetPassword</string>
+
 </resources>
