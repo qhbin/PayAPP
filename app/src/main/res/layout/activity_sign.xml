@@ -20,7 +20,7 @@
         android:layout_width="0dp"
         android:layout_height="50dp"
         android:gravity="center_vertical"
-        android:text="@string/user_real_name"
+        android:text="@string/sign_user_name"
         android:layout_weight="2"/>
        <EditText
            android:id="@+id/sign_username"
@@ -28,7 +28,8 @@
            android:layout_height="50dp"
            android:layout_weight="11"
            android:maxLength="16"
-           android:singleLine="true"/>
+           android:singleLine="true"
+           android:hint="例如”狗蛋“"/>
     </LinearLayout>
     <LinearLayout
         android:orientation="horizontal"
@@ -49,7 +50,8 @@
             android:layout_height="50dp"
             android:layout_weight="11"
             android:maxLength="16"
-            android:singleLine="true"/>
+            android:singleLine="true"
+            android:hint="手机将作为唯一账号"/>
     </LinearLayout>
     <LinearLayout
         android:orientation="horizontal"
@@ -73,6 +75,7 @@
             android:maxLength="16"
             android:inputType="textVisiblePassword"
             android:singleLine="true"
+            android:hint="需要字母数字或符号"
             />
     </LinearLayout>
     <Button

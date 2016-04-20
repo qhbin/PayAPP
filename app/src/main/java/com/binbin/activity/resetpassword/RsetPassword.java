@@ -1,4 +1,4 @@
-package com.binbin.activity;
+package com.binbin.activity.resetpassword;
 
 import android.app.Activity;
 import android.os.Bundle;

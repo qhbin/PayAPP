@@ -23,8 +23,20 @@
             android:label="@string/title_activity_sign" >
         </activity>
         <activity
-            android:name=".RsetPassword"
+            android:name=".resetpassword.RsetPassword"
             android:label="@string/title_activity_rset_password" >
+        </activity>
+        <activity
+            android:name=".resetpassword.CheckRsetPassword"
+            android:label="@string/title_activity_check_rset_password" >
+        </activity>
+        <activity
+            android:name=".resetpassword.GetRsetPassword"
+            android:label="@string/title_activity_get_rset_password" >
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/title_activity_main" >
         </activity>
     </application>
 
