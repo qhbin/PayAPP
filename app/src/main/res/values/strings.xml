@@ -18,5 +18,9 @@
     <string name="title_activity_check_rset_password">CheckRsetPassword</string>
     <string name="title_activity_get_rset_password">GetRsetPassword</string>
     <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_transfer_account">TransferAccount</string>
+    <string name="title_activity_transfer_amount">TransferAmount</string>
+    <string name="title_activity_account_balance">AccountBalance</string>
+    <string name="title_activity_withdraw">Withdraw</string>
 
 </resources>

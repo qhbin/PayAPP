@@ -38,6 +38,26 @@
             android:name=".MainActivity"
             android:label="@string/title_activity_main" >
         </activity>
+        <activity
+            android:name=".transfer_accounts.TransferAccount"
+            android:label="@string/title_activity_transfer_account" >
+        </activity>
+        <activity
+            android:name=".transfer_accounts.TransferAmount"
+            android:label="@string/title_activity_transfer_amount" >
+        </activity>
+        <activity
+            android:name=".balance.ChargeMoney"
+            android:label="@string/title_activity_account_balance" >
+        </activity>
+        <activity
+            android:name=".balance.AccountBalance"
+            android:label="@string/title_activity_account_balance" >
+        </activity>
+        <activity
+            android:name=".balance.Withdraw"
+            android:label="@string/title_activity_withdraw" >
+        </activity>
     </application>
 
 </manifest>
