@@ -5,8 +5,10 @@ import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.view.Window;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import com.binbin.activity.R;
 import com.binbin.client.Connector;
@@ -27,6 +29,7 @@ public class SignActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        requestWindowFeature(Window.FEATURE_CUSTOM_TITLE);
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign);
         initView();
@@ -64,6 +67,9 @@ public class SignActivity extends Activity {
     }
 
     private void initView(){
+        getWindow().setFeatureInt(Window.FEATURE_CUSTOM_TITLE,
+                R.layout.union_title); // 设置标题样式
+        ((TextView) findViewById(R.id.title)).setText("填写手机号");
         et_username = (EditText)findViewById(R.id.sign_username);
         et_mobile_phone = (EditText)findViewById(R.id.sign_mobile_phone);
         et_password = (EditText)findViewById(R.id.sign_password);
