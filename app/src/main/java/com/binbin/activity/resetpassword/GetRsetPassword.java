@@ -1,10 +1,13 @@
 package com.binbin.activity.resetpassword;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
+import com.binbin.activity.MainActivity;
 import com.binbin.activity.R;
 
 public class GetRsetPassword extends Activity {
@@ -15,26 +18,10 @@ public class GetRsetPassword extends Activity {
         setContentView(R.layout.activity_get_rset_password);
     }
 
-
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_get_rset_password, menu);
-        return true;
+    public void nextStep(View view){
+        Intent intent = new Intent();
+        intent.setClass(this,MainActivity.class);
+        startActivity(intent);
     }
 
-    @Override
-    public boolean onOptionsItemSelected(MenuItem item) {
-        // Handle action bar item clicks here. The action bar will
-        // automatically handle clicks on the Home/Up button, so long
-        // as you specify a parent activity in AndroidManifest.xml.
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
-    }
 }

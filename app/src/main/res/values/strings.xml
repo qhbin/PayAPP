@@ -22,5 +22,43 @@
     <string name="title_activity_transfer_amount">TransferAmount</string>
     <string name="title_activity_account_balance">AccountBalance</string>
     <string name="title_activity_withdraw">Withdraw</string>
+    <!-- account info -->
+    <string name="title_activity_account_info">AccountInfoActivity</string>
+    <string name="user_info">用户信息：</string>
+    <string name="phone">手机：</string>
+    <string name="wechat">微信号：</string>
+    <string name="info_link_mark">></string>
+    <!-- user info -->
+    <string name="title_activity_user_info">UserInfoActivity</string>
+    <string name="name">姓名：</string>
+    <string name="identity">身份证：</string>
+    <!-- phone info -->
+    <string name="title_activity_phone_info">PhoneInfoActivity</string>
+    <string name="phone_number">手机号</string>
+    <string name="change_phone_number">更换手机号</string>
+    <!-- bind wechat pay -->
+    <string name="next_step">下一步</string>
+    <string name="title_activity_bind_wechat_pay_first_step">BindWechatPayFirstStepActivity</string>
+    <string name="input_wechat">请输入你需要绑定的微信号</string>
+    <string name="input_wechat_notice">请输入微信号</string>
+    <string name="title_activity_bind_wechat_pay_second_step">BindWechatPaySecondStepActivity</string>
+    <string name="input_pay_pwd">请输入你的支付密码</string>
+    <string name="input_pay_pwd_notice">请输入支付密码</string>
+    <string name="pay_pwd">支付密码</string>
+    <string name="input_again">重复输入</string>
+    <string name="title_activity_bind_wechat_pay_third_step">BindWechatPayThirdStepActivity</string>
+    <string name="wechat_pwd">微信支付密码</string>
+    <string name="input_wechat_pay_pwd">请输入你需要绑定的微信支付密码</string>
+    <string name="input_wechat_pay_pwd_notice">请输入微信支付密码</string>
+    <string name="finish">完成</string>
+    <!-- phone num change -->
+    <string name="title_activity_phone_num_change_first_step">PhoneNumChangeFirstStepActivity</string>
+    <string name="title_activity_phone_num_change_second_step">PhoneNumChangeSecondStepActivity</string>
+    <string name="input_bind_phone_num">请输入你需要绑定的手机号</string>
+    <string name="input_bind_phone_num_notice">请输入手机号</string>
+    <string name="check_code">校验码</string>
+    <string name="check_code_message_notice">短信校验码</string>
+    <string name="resend_check_code">重发校验码</string>
+    <string name="title_activity_we_chat_info">WeChatInfoActivity</string>
 
 </resources>

@@ -9,6 +9,7 @@ import android.widget.EditText;
 import android.view.View.OnClickListener;
 import android.widget.TextView;
 
+import com.binbin.activity.resetpassword.RsetPassword;
 import com.binbin.client.Connector;
 import com.binbin.commom.util.Encode;
 import com.binbin.proto.IprojHeader;
@@ -21,6 +22,7 @@ public class LoginActivity extends Activity implements OnClickListener  {
 
     private EditText et_username = null;
     private EditText et_password = null;
+    private TextView et_forget_password=null;
     private Button bt_login = null;
     private TextView et_register = null;
     private String m_sUserName = null;
@@ -39,8 +41,11 @@ public class LoginActivity extends Activity implements OnClickListener  {
         et_password = (EditText)findViewById(R.id.password);
         et_register = (TextView)findViewById(R.id.user_sign);
         bt_login = (Button)findViewById(R.id.login);
+        et_forget_password = (TextView)findViewById(R.id.forget_password);
+        et_forget_password.setOnClickListener(this);
         bt_login.setOnClickListener(this);
         et_register.setOnClickListener(this);
+
 
     }
 
@@ -49,8 +54,13 @@ public class LoginActivity extends Activity implements OnClickListener  {
             case R.id.login:
                 submit();
                 break;
-            default:
+            case R.id.user_sign:
                 goRegister();
+                break;
+            case R.id.forget_password:
+                goResetPassword();
+                break;
+            default:
                 break;
         }
     }
@@ -76,12 +86,22 @@ public class LoginActivity extends Activity implements OnClickListener  {
                     ByteString bs_receive = m_conn.receiveMessage();
                     LoginRsp rsp = LoginRsp.parseFrom(bs_receive);
                     System.out.println("result of receive msg: " + rsp.getResult());
+
+                  Intent intent = new Intent();
+                  intent.setClass(LoginActivity.this,MainActivity.class);
+                  startActivity(intent);
                 } catch (InvalidProtocolBufferException e) {
                     e.printStackTrace();
                 }
             }
         }.start();
 
+    }
+
+    protected void goResetPassword(){
+        Intent intent = new Intent();
+        intent.setClass(this,RsetPassword.class);
+        startActivity(intent);
     }
 
     protected void  goRegister(){

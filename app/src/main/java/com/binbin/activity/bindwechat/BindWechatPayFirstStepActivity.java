@@ -1,4 +1,4 @@
-package com.binbin.activity.resetpassword;
+package com.binbin.activity.bindwechat;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -9,16 +9,18 @@ import android.view.View;
 
 import com.binbin.activity.R;
 
-public class CheckRsetPassword extends Activity {
+public class BindWechatPayFirstStepActivity extends Activity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_check_rset_password);
+        setContentView(R.layout.activity_bind_wechat_pay_first_step);
     }
+
+
     public void nextStep(View view){
         Intent intent = new Intent();
-        intent.setClass(this,GetRsetPassword.class);
+        intent.setClass(BindWechatPayFirstStepActivity.this,BindWechatPaySecondStepActivity.class);
         startActivity(intent);
     }
 }

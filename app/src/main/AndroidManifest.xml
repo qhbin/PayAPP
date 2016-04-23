@@ -58,6 +58,34 @@
             android:name=".balance.Withdraw"
             android:label="@string/title_activity_withdraw" >
         </activity>
+        <activity
+            android:name=".bindwechat.WeChatInfoActivity"
+            android:label="@string/title_activity_we_chat_info" >
+        </activity>
+        <activity android:name=".InfoAccountActivity"
+            android:label="Info">
+        </activity>
+        <activity android:name=".InfoUserActivity"
+            android:label="Info">
+        </activity>
+        <activity android:name=".changephone.InfoPhoneActivity"
+            android:label="Info">
+        </activity>
+        <activity android:name=".changephone.PhoneNumChangeFirstStepActivity"
+            android:label="Info">
+        </activity>
+        <activity android:name=".changephone.PhoneNumChangeSecondStepActivity"
+            android:label="Info">
+        </activity>
+        <activity android:name=".bindwechat.BindWechatPayFirstStepActivity"
+            android:label="Info">
+        </activity>
+        <activity android:name=".bindwechat.BindWechatPaySecondStepActivity"
+            android:label="Info">
+        </activity>
+        <activity android:name=".bindwechat.BindWechatPayThirdStepActivity"
+            android:label="Info">
+        </activity>
     </application>
 
 </manifest>
