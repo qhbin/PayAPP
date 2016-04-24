@@ -30,4 +30,14 @@ public class InfoUserActivity extends Activity {
         intent.setClass(InfoUserActivity.this,MainActivity.class);
         startActivity(intent);
     }
+
+    /**
+     * 返回
+     */
+    public void back(View view) {
+        Intent intent = new Intent(this.getApplicationContext(),
+                InfoAccountActivity.class);
+        startActivity(intent);
+        InfoUserActivity.this.finish();
+    }
 }

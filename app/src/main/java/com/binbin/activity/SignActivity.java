@@ -1,6 +1,7 @@
 package com.binbin.activity;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -74,6 +75,16 @@ public class SignActivity extends Activity {
         et_mobile_phone = (EditText)findViewById(R.id.sign_mobile_phone);
         et_password = (EditText)findViewById(R.id.sign_password);
         bt_sign =(Button) findViewById(R.id.sign);
+    }
+
+    /**
+     * 返回
+     */
+    public void back(View view) {
+        Intent intent = new Intent(this.getApplicationContext(),
+                LoginActivity.class);
+        startActivity(intent);
+        SignActivity.this.finish();
     }
 
 

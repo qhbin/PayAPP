@@ -9,6 +9,8 @@ import android.view.View;
 import android.view.Window;
 import android.widget.TextView;
 
+import com.binbin.activity.InfoAccountActivity;
+import com.binbin.activity.LoginActivity;
 import com.binbin.activity.R;
 
 public class WeChatInfoActivity extends Activity {
@@ -27,5 +29,15 @@ public class WeChatInfoActivity extends Activity {
         Intent intent = new Intent();
         intent.setClass(WeChatInfoActivity.this,BindWechatPayFirstStepActivity.class);
         startActivity(intent);
+    }
+
+    /**
+     * 返回
+     */
+    public void back(View view) {
+        Intent intent = new Intent(this.getApplicationContext(),
+                InfoAccountActivity.class);
+        startActivity(intent);
+        WeChatInfoActivity.this.finish();
     }
 }

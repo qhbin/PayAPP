@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.Window;
 import android.widget.TextView;
 
+import com.binbin.activity.LoginActivity;
 import com.binbin.activity.R;
 
 public class PhoneNumChangeFirstStepActivity extends Activity {
@@ -27,5 +28,15 @@ public class PhoneNumChangeFirstStepActivity extends Activity {
         Intent intent = new Intent();
         intent.setClass(PhoneNumChangeFirstStepActivity.this,PhoneNumChangeSecondStepActivity.class);
         startActivity(intent);
+    }
+
+    /**
+     * 返回
+     */
+    public void back(View view) {
+        Intent intent = new Intent(this.getApplicationContext(),
+                InfoPhoneActivity.class);
+        startActivity(intent);
+        PhoneNumChangeFirstStepActivity.this.finish();
     }
 }

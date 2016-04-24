@@ -26,6 +26,16 @@ public class InfoAccountActivity extends Activity {
         init();
     }
 
+    /**
+     * 返回
+     */
+    public void back(View view) {
+        Intent intent = new Intent(this.getApplicationContext(),
+                MainActivity.class);
+        startActivity(intent);
+        InfoAccountActivity.this.finish();
+    }
+
     protected void init(){
         getWindow().setFeatureInt(Window.FEATURE_CUSTOM_TITLE,
                 R.layout.union_title); // 设置标题样式
