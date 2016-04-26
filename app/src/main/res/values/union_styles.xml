@@ -3,11 +3,16 @@
     <style name="CustomizedWindowTitleBackgroundColor">
         <item name="android:background">#047BF0</item>
     </style>
+    <style name="WindowTitle" parent="android:TextAppearance.WindowTitle">
+        <item name="android:singleLine">true</item>
+    </style>
 
     <!-- 标题栏 -->
-    <style name="TitleTheme" parent="android:Theme">
+    <style name="TitleTheme" parent="android:Theme.Light">
         <item name="android:windowTitleSize">45dp</item>
         <item name="android:windowTitleBackgroundStyle">@style/CustomizedWindowTitleBackgroundColor</item>
+        <item name="android:windowTitleStyle">@style/WindowTitle</item>
+        <item name="android:fitsSystemWindows">true</item>
     </style>
 
 </resources>

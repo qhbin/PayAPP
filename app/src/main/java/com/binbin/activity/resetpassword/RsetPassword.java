@@ -27,4 +27,7 @@ public class RsetPassword extends Activity {
         intent.setClass(RsetPassword.this,CheckRsetPassword.class);
         startActivity(intent);
     }
+    public void back(View view){
+        RsetPassword.this.finish();
+    }
 }

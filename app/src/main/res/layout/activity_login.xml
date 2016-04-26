@@ -2,7 +2,10 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent" android:layout_height="match_parent"
     android:orientation="vertical"
-    android:weightSum="1">
+    android:weightSum="1"
+    android:background="#FFFFFF"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="false">
 
  <LinearLayout
         android:layout_width="fill_parent"
@@ -26,13 +29,15 @@
       >
 
     <TextView
-        android:layout_width="48dp"
+        android:layout_width="0dp"
+        android:layout_weight="2"
         android:layout_height="fill_parent"
         android:gravity="center_vertical"
         android:text="@string/user_name"/>
     <EditText
         android:id="@+id/username"
-        android:layout_width="300dp"
+        android:layout_width="0dp"
+        android:layout_weight="11"
         android:layout_height="fill_parent"
         android:singleLine="true"
         android:maxLength="18"
@@ -49,13 +54,15 @@
         >
 
         <TextView
-            android:layout_width="48dp"
+            android:layout_width="0dp"
+            android:layout_weight="2"
             android:layout_height="fill_parent"
             android:gravity="center_vertical"
             android:text="@string/pass_word"/>
         <EditText
             android:id="@+id/password"
-            android:layout_width="300dp"
+            android:layout_width="0dp"
+            android:layout_weight="11"
             android:layout_height="fill_parent"
             android:maxLength="16"
             android:hint="输入登陆密码"
@@ -67,7 +74,7 @@
     <Button
         android:id="@+id/login"
         android:layout_width="190dp"
-        android:layout_height="wrap_content"
+        android:layout_height="45dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="10dp"
         android:text="@string/login"
@@ -81,7 +88,6 @@
         android:textColor="@android:color/holo_blue_light"
         android:text="@string/forget_password"
         android:gravity="center"/>
-
  </LinearLayout>
     <TextView
         android:id="@+id/user_sign"

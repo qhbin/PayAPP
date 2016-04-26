@@ -1,12 +1,13 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingLeft="0dp"
-    android:paddingRight="0dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
     android:paddingTop="@dimen/activity_vertical_margin"
     android:paddingBottom="@dimen/activity_vertical_margin"
     tools:context="com.binbin.activity.InfoUserActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="#ffffff">
 
         <LinearLayout
             android:orientation="horizontal"
@@ -16,20 +17,20 @@
             android:layout_marginTop="10dp"
             >
             <TextView
-                android:layout_height="50dp"
+                android:layout_height="fill_parent"
                 android:layout_width="0dp"
                 android:layout_marginLeft="20dp"
                 android:textSize="@dimen/user_info_font_size"
                 android:gravity="center_vertical"
                 android:text="昵称"
-                android:layout_weight="3"/>
+                android:layout_weight="2"/>
             <EditText
                 android:id="@+id/user_account_name"
                 android:layout_width="0dp"
-                android:layout_height="50dp"
+                android:layout_height="fill_parent"
                 android:gravity="center_horizontal"
                 android:textSize="@dimen/user_info_font_size"
-                android:layout_weight="5"
+                android:layout_weight="11"
                 android:maxLength="16"
                 android:singleLine="true"
                 android:text="傻傻"/>
@@ -37,7 +38,7 @@
     <Button
         android:id="@+id/commit_username_change"
         android:layout_width="190dp"
-        android:layout_height="wrap_content"
+        android:layout_height="45dp"
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="10dp"
         android:text="确定"

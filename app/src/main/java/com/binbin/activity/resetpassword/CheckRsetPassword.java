@@ -27,4 +27,7 @@ public class CheckRsetPassword extends Activity {
         intent.setClass(this,GetRsetPassword.class);
         startActivity(intent);
     }
+    public void back(View view){
+        CheckRsetPassword.this.finish();
+    }
 }

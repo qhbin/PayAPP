@@ -81,9 +81,9 @@ public class SignActivity extends Activity {
      * 返回
      */
     public void back(View view) {
-        Intent intent = new Intent(this.getApplicationContext(),
+        /*Intent intent = new Intent(this.getApplicationContext(),
                 LoginActivity.class);
-        startActivity(intent);
+        startActivity(intent);*/
         SignActivity.this.finish();
     }
 

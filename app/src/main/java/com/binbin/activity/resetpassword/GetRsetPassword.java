@@ -28,6 +28,10 @@ public class GetRsetPassword extends Activity {
         Intent intent = new Intent();
         intent.setClass(this,MainActivity.class);
         startActivity(intent);
+        GetRsetPassword.this.finish();
     }
 
+    public void back(View view){
+        GetRsetPassword.this.finish();
+    }
 }

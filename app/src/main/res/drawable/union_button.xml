@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- 按钮不可点击状态 -->
+    <item android:state_enabled="false">
+        <shape>
+            <!-- 圆角 -->
+            <corners android:radius="8dp" />
+            <!-- 填充色 -->
+            <solid android:color="#95d6e9" />
+            <!-- 内补 -->
+            <padding
+                android:top="8dp"
+                android:bottom="8dp"
+                android:left="15dp"
+                android:right="15dp" />
+        </shape>
+    </item>
+    <!-- 按钮按下时的样式 -->
+    <item android:state_pressed="true">
+        <shape>
+            <!-- 圆角 -->
+            <corners android:radius="8dp" />
+            <!-- 填充色 -->
+            <solid android:color="#1b7af7" />
+            <!-- 内补 -->
+            <padding
+                android:top="8dp"
+                android:bottom="8dp"
+                android:left="15dp"
+                android:right="15dp" />
+        </shape>
+    </item>
+    
+    <item>
+        <shape>
+            <corners android:radius="8dp" />
+            <solid android:color="#4cb0f9"/>
+            <padding
+                android:top="8dp"
+                android:bottom="8dp"
+                android:left="15dp"
+                android:right="15dp" />
+        </shape>
+    </item>
+
+</selector>

@@ -12,7 +12,7 @@ import android.widget.TextView;
 
 public class InfoUserActivity extends Activity {
 
-    private ActionBar actionBar;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         requestWindowFeature(Window.FEATURE_CUSTOM_TITLE);
@@ -21,9 +21,6 @@ public class InfoUserActivity extends Activity {
         getWindow().setFeatureInt(Window.FEATURE_CUSTOM_TITLE,
                 R.layout.union_title); // 设置标题样式
         ((TextView) findViewById(R.id.title)).setText("用户信息");
-        actionBar=getActionBar();
-        actionBar.show();
-        actionBar.setDisplayHomeAsUpEnabled(true);
     }
     public void submitName(View view){
         Intent intent = new Intent();
@@ -35,9 +32,6 @@ public class InfoUserActivity extends Activity {
      * 返回
      */
     public void back(View view) {
-        Intent intent = new Intent(this.getApplicationContext(),
-                InfoAccountActivity.class);
-        startActivity(intent);
         InfoUserActivity.this.finish();
     }
 }

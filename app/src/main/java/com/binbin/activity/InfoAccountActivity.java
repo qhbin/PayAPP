@@ -30,9 +30,6 @@ public class InfoAccountActivity extends Activity {
      * 返回
      */
     public void back(View view) {
-        Intent intent = new Intent(this.getApplicationContext(),
-                MainActivity.class);
-        startActivity(intent);
         InfoAccountActivity.this.finish();
     }
 

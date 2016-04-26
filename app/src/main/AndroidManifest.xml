@@ -8,39 +8,40 @@
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/TitleTheme" >
         <activity
             android:name=".LoginActivity"
-            android:label="@string/title_activity_login" >
+            android:label="@string/title_activity_login"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
             android:name=".SignActivity"
             android:label="@string/title_activity_sign"
-            android:theme="@style/TitleTheme">
+            >
         </activity>
         <activity
             android:name=".resetpassword.RsetPassword"
             android:label="@string/title_activity_rset_password"
-            android:theme="@style/TitleTheme">
+           >
         </activity>
         <activity
             android:name=".resetpassword.CheckRsetPassword"
             android:label="@string/title_activity_check_rset_password"
-            android:theme="@style/TitleTheme">
+            >
         </activity>
         <activity
             android:name=".resetpassword.GetRsetPassword"
             android:label="@string/title_activity_get_rset_password"
-            android:theme="@style/TitleTheme">
+            >
         </activity>
         <activity
             android:name=".MainActivity"
-            android:label="@string/title_activity_main" >
+            android:label="@string/title_activity_main"
+           >
         </activity>
         <activity
             android:name=".transfer_accounts.TransferAccount"
@@ -53,7 +54,7 @@
         <activity
             android:name=".balance.ChargeMoney"
             android:label="@string/title_activity_account_balance"
-            android:theme="@style/TitleTheme">
+            >
         </activity>
         <activity
             android:name=".balance.AccountBalance"
@@ -66,39 +67,39 @@
         <activity
             android:name=".bindwechat.WeChatInfoActivity"
             android:label="@string/title_activity_we_chat_info"
-            android:theme="@style/TitleTheme">
+           >
         </activity>
         <activity android:name=".InfoAccountActivity"
             android:label="Info"
-            android:theme="@style/TitleTheme">
+           >
         </activity>
         <activity android:name=".InfoUserActivity"
             android:label="Info"
-            android:theme="@style/TitleTheme">
+           >
         </activity>
         <activity android:name=".changephone.InfoPhoneActivity"
             android:label="Info"
-            android:theme="@style/TitleTheme">
+            >
         </activity>
         <activity android:name=".changephone.PhoneNumChangeFirstStepActivity"
             android:label="Info"
-            android:theme="@style/TitleTheme">
+           >
         </activity>
         <activity android:name=".changephone.PhoneNumChangeSecondStepActivity"
             android:label="Info"
-            android:theme="@style/TitleTheme">
+            >
         </activity>
         <activity android:name=".bindwechat.BindWechatPayFirstStepActivity"
             android:label="Info"
-            android:theme="@style/TitleTheme">
+            >
         </activity>
         <activity android:name=".bindwechat.BindWechatPaySecondStepActivity"
             android:label="Info"
-            android:theme="@style/TitleTheme">
+            >
         </activity>
         <activity android:name=".bindwechat.BindWechatPayThirdStepActivity"
             android:label="Info"
-            android:theme="@style/TitleTheme">
+            >
         </activity>
     </application>
 

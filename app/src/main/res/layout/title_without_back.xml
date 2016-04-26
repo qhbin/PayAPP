@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="#047BF0"
+    android:minHeight="35dp"
+    android:fitsSystemWindows="true"
+    android:clipToPadding="true">
+
+    <TextView
+        android:id="@+id/title_main"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:minEms="5"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
+
+</RelativeLayout>
