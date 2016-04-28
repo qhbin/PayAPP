@@ -21,7 +21,7 @@ import  com.binbin.proto.Line.RegistUserRsp;
 import com.google.protobuf.ByteString;
 import com.google.protobuf.InvalidProtocolBufferException;
 
-public class SignActivity extends Activity {
+public class SignActivity extends BaseActivity {
     private EditText et_username = null;
     private EditText et_password = null;
     private EditText et_mobile_phone = null;
@@ -76,16 +76,5 @@ public class SignActivity extends Activity {
         et_password = (EditText)findViewById(R.id.sign_password);
         bt_sign =(Button) findViewById(R.id.sign);
     }
-
-    /**
-     * 返回
-     */
-    public void back(View view) {
-        /*Intent intent = new Intent(this.getApplicationContext(),
-                LoginActivity.class);
-        startActivity(intent);*/
-        SignActivity.this.finish();
-    }
-
 
 }

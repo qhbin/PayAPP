@@ -9,9 +9,10 @@ import android.view.View;
 import android.view.Window;
 import android.widget.TextView;
 
+import com.binbin.activity.BaseActivity;
 import com.binbin.activity.R;
 
-public class TransferAccount extends Activity {
+public class TransferAccount extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,8 +29,6 @@ public class TransferAccount extends Activity {
         intent.setClass(TransferAccount.this,TransferAmount.class);
         startActivity(intent);
     }
-    public void back(View view) {
-        TransferAccount.this.finish();
-    }
+
 
 }

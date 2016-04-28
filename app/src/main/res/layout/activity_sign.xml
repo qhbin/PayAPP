@@ -19,17 +19,15 @@
         >
     <TextView
         android:layout_width="0dp"
-        android:layout_height="50dp"
+        android:layout_height="fill_parent"
         android:gravity="center_vertical"
         android:text="@string/sign_user_name"
         android:layout_weight="2"/>
        <EditText
            android:id="@+id/sign_username"
-           android:layout_width="0dp"
-           android:layout_height="50dp"
+          style="@style/edit_text_style"
            android:layout_weight="11"
            android:maxLength="16"
-           android:singleLine="true"
            android:hint="例如”狗蛋“"/>
     </LinearLayout>
     <LinearLayout
@@ -48,10 +46,9 @@
         <EditText
             android:id="@+id/sign_mobile_phone"
             android:layout_width="0dp"
-            android:layout_height="50dp"
+            style="@style/edit_text_style"
             android:layout_weight="11"
             android:maxLength="16"
-            android:singleLine="true"
             android:hint="手机将作为唯一账号"/>
     </LinearLayout>
     <LinearLayout
@@ -72,19 +69,18 @@
             android:id="@+id/sign_password"
             android:layout_width="0dp"
             android:layout_weight="11"
-            android:layout_height="fill_parent"
+            style="@style/edit_text_style"
             android:maxLength="16"
             android:inputType="textVisiblePassword"
-            android:singleLine="true"
             android:hint="需要字母数字或符号"
             />
     </LinearLayout>
     <Button
         android:id="@+id/sign"
-        android:layout_width="190dp"
-        android:layout_height="45dp"
+        android:layout_width="@dimen/btn_width"
+        android:layout_height="@dimen/btn_height"
         android:layout_gravity="center_horizontal"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="16dp"
         android:text="@string/sign"
         android:background="@android:color/holo_blue_light"
         android:textColor="@android:color/white" />

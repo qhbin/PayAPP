@@ -10,7 +10,7 @@ import android.view.View;
 import android.view.Window;
 import android.widget.TextView;
 
-public class InfoUserActivity extends Activity {
+public class InfoUserActivity extends BaseActivity {
 
 
     @Override
@@ -28,10 +28,4 @@ public class InfoUserActivity extends Activity {
         startActivity(intent);
     }
 
-    /**
-     * 返回
-     */
-    public void back(View view) {
-        InfoUserActivity.this.finish();
-    }
 }

@@ -8,9 +8,11 @@ import android.view.View;
 import android.view.Window;
 import android.widget.TextView;
 
+import com.binbin.activity.BaseActivity;
+import com.binbin.activity.PayDialog;
 import com.binbin.activity.R;
 
-public class Withdraw extends Activity {
+public class Withdraw extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,7 +25,12 @@ public class Withdraw extends Activity {
     }
 
 
-    public void back(View view){
-        Withdraw.this.finish();
+
+
+
+    public void nextStep(View view){
+        PayDialog dialog = new PayDialog(Withdraw.this,new PayDialog.OnCustomDialogListener() {});
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.show();
     }
 }

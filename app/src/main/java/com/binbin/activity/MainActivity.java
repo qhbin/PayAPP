@@ -17,7 +17,7 @@ import com.binbin.activity.transfer_accounts.TransferAccount;
 
 import java.util.Iterator;
 
-public class MainActivity extends Activity {
+public class MainActivity extends BaseActivity {
     private LinearLayout user_info;
     private Button goBalance;
     private Button goTransfer;

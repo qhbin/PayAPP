@@ -8,9 +8,11 @@ import android.view.View;
 import android.view.Window;
 import android.widget.TextView;
 
+import com.binbin.activity.BaseActivity;
+import com.binbin.activity.PayDialog;
 import com.binbin.activity.R;
 
-public class ChargeMoney extends Activity {
+public class ChargeMoney extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,8 +24,12 @@ public class ChargeMoney extends Activity {
         ((TextView) findViewById(R.id.title)).setText("充值现金");
     }
 
-    public void back(View view){
-        ChargeMoney.this.finish();
+    public void nextStep(View view){
+        PayDialog dialog = new PayDialog(ChargeMoney.this,new PayDialog.OnCustomDialogListener() {});
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.show();
     }
+
+
 
 }

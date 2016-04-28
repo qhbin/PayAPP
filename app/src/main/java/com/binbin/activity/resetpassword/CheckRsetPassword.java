@@ -9,9 +9,10 @@ import android.view.View;
 import android.view.Window;
 import android.widget.TextView;
 
+import com.binbin.activity.BaseActivity;
 import com.binbin.activity.R;
 
-public class CheckRsetPassword extends Activity {
+public class CheckRsetPassword extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -27,7 +28,5 @@ public class CheckRsetPassword extends Activity {
         intent.setClass(this,GetRsetPassword.class);
         startActivity(intent);
     }
-    public void back(View view){
-        CheckRsetPassword.this.finish();
-    }
+
 }

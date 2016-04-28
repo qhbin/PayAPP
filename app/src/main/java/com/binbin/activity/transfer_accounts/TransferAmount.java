@@ -9,9 +9,11 @@ import android.view.Window;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.binbin.activity.BaseActivity;
+import com.binbin.activity.PayDialog;
 import com.binbin.activity.R;
 
-public class TransferAmount extends Activity {
+public class TransferAmount extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +26,9 @@ public class TransferAmount extends Activity {
     }
 
     public void nextStep(View view){
-
+        PayDialog dialog = new PayDialog(TransferAmount.this,new PayDialog.OnCustomDialogListener() {});
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        dialog.show();
     }
 
     public void back(View view) {

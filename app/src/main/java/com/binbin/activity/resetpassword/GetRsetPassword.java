@@ -9,10 +9,11 @@ import android.view.View;
 import android.view.Window;
 import android.widget.TextView;
 
+import com.binbin.activity.BaseActivity;
 import com.binbin.activity.MainActivity;
 import com.binbin.activity.R;
 
-public class GetRsetPassword extends Activity {
+public class GetRsetPassword extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,7 +32,5 @@ public class GetRsetPassword extends Activity {
         GetRsetPassword.this.finish();
     }
 
-    public void back(View view){
-        GetRsetPassword.this.finish();
-    }
+
 }

@@ -10,9 +10,10 @@ import android.view.Window;
 import android.widget.LinearLayout;
 import android.widget.TextView;
 
+import com.binbin.activity.BaseActivity;
 import com.binbin.activity.R;
 
-public class AccountBalance extends Activity {
+public class AccountBalance extends BaseActivity {
     private LinearLayout goChargeMoney;
     private  LinearLayout goWithdraw;
 
@@ -49,8 +50,6 @@ public class AccountBalance extends Activity {
         });
     }
 
-    public void back(View view){
-        AccountBalance.this.finish();
-    }
+
 
 }

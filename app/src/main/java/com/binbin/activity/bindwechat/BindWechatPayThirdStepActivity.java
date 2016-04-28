@@ -9,11 +9,12 @@ import android.view.View;
 import android.view.Window;
 import android.widget.TextView;
 
+import com.binbin.activity.BaseActivity;
 import com.binbin.activity.LoginActivity;
 import com.binbin.activity.MainActivity;
 import com.binbin.activity.R;
 
-public class BindWechatPayThirdStepActivity extends Activity {
+public class BindWechatPayThirdStepActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,14 +32,5 @@ public class BindWechatPayThirdStepActivity extends Activity {
         startActivity(intent);
     }
 
-    /**
-     * 返回
-     */
-    public void back(View view) {
-        Intent intent = new Intent(this.getApplicationContext(),
-                BindWechatPaySecondStepActivity.class);
-        startActivity(intent);
-        BindWechatPayThirdStepActivity.this.finish();
-    }
 
 }

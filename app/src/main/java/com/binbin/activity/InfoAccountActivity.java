@@ -13,7 +13,7 @@ import android.widget.TextView;
 import com.binbin.activity.bindwechat.WeChatInfoActivity;
 import com.binbin.activity.changephone.InfoPhoneActivity;
 
-public class InfoAccountActivity extends Activity {
+public class InfoAccountActivity extends BaseActivity {
     private LinearLayout goUserName;
     private LinearLayout goWeChatInfo;
     private LinearLayout goMobileInfo;
@@ -26,12 +26,6 @@ public class InfoAccountActivity extends Activity {
         init();
     }
 
-    /**
-     * 返回
-     */
-    public void back(View view) {
-        InfoAccountActivity.this.finish();
-    }
 
     protected void init(){
         getWindow().setFeatureInt(Window.FEATURE_CUSTOM_TITLE,

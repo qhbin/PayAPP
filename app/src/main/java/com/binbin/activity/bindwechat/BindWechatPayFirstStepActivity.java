@@ -9,9 +9,10 @@ import android.view.View;
 import android.view.Window;
 import android.widget.TextView;
 
+import com.binbin.activity.BaseActivity;
 import com.binbin.activity.R;
 
-public class BindWechatPayFirstStepActivity extends Activity {
+public class BindWechatPayFirstStepActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

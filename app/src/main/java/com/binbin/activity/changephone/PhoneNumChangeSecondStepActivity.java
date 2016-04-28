@@ -13,11 +13,12 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.binbin.activity.BaseActivity;
 import com.binbin.activity.LoginActivity;
 import com.binbin.activity.MainActivity;
 import com.binbin.activity.R;
 
-public class PhoneNumChangeSecondStepActivity extends Activity {
+public class PhoneNumChangeSecondStepActivity extends BaseActivity {
     private EditText smsCode; // 短信验证码
     private Button getSMSCodeBtn; // 获取短信验证码
 
@@ -40,16 +41,6 @@ public class PhoneNumChangeSecondStepActivity extends Activity {
         Intent intent = new Intent();
         intent.setClass(PhoneNumChangeSecondStepActivity.this,MainActivity.class);
         startActivity(intent);
-    }
-
-    /**
-     * 返回
-     */
-    public void back(View view) {
-        Intent intent = new Intent(this.getApplicationContext(),
-                PhoneNumChangeFirstStepActivity.class);
-        startActivity(intent);
-        PhoneNumChangeSecondStepActivity.this.finish();
     }
 
     /**

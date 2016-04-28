@@ -9,10 +9,11 @@ import android.view.View;
 import android.view.Window;
 import android.widget.TextView;
 
+import com.binbin.activity.BaseActivity;
 import com.binbin.activity.LoginActivity;
 import com.binbin.activity.R;
 
-public class PhoneNumChangeFirstStepActivity extends Activity {
+public class PhoneNumChangeFirstStepActivity extends BaseActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,13 +31,4 @@ public class PhoneNumChangeFirstStepActivity extends Activity {
         startActivity(intent);
     }
 
-    /**
-     * 返回
-     */
-    public void back(View view) {
-        Intent intent = new Intent(this.getApplicationContext(),
-                InfoPhoneActivity.class);
-        startActivity(intent);
-        PhoneNumChangeFirstStepActivity.this.finish();
-    }
 }

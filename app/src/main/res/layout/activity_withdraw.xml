@@ -78,8 +78,8 @@
 
     <Button
         android:id="@+id/wi_withdraw_submit"
-        android:layout_width="190dp"
-        android:layout_height="45dp"
+        android:layout_width="@dimen/btn_width"
+        android:layout_height="@dimen/btn_height"
         android:layout_gravity="center_horizontal"
         android:layout_below="@id/wi_wechat_content"
         android:layout_centerHorizontal="true"
@@ -87,6 +87,7 @@
         android:text="确认转出"
         android:background="@android:color/holo_blue_light"
         android:textColor="@android:color/white"
+        android:onClick="nextStep"
         />
 
 </RelativeLayout>
