@@ -14,6 +14,7 @@ import android.widget.TextView;
 import com.binbin.activity.R;
 import com.binbin.client.Connector;
 import com.binbin.commom.util.Encode;
+import com.binbin.commom.util.JudgePhoneNum;
 import com.binbin.proto.IprojHeader.Header;
 import com.binbin.proto.Line;
 import com.binbin.proto.Line.RegistUserReq;
@@ -26,6 +27,9 @@ public class SignActivity extends BaseActivity {
     private EditText et_password = null;
     private EditText et_mobile_phone = null;
     private Button bt_sign = null;
+    private  String phoneNums=null;
+    private  String username = null;
+    private  String password = null;
     private Connector m_conn = null;
 
     @Override
@@ -34,7 +38,7 @@ public class SignActivity extends BaseActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sign);
         initView();
-        bt_sign.setOnClickListener(new View.OnClickListener() {
+      /*  bt_sign.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 final String username = et_username.getText().toString();
@@ -64,17 +68,39 @@ public class SignActivity extends BaseActivity {
                     }
                 }.start();
             }
-        });
+        });*/
     }
+
 
     private void initView(){
         getWindow().setFeatureInt(Window.FEATURE_CUSTOM_TITLE,
                 R.layout.union_title); // 设置标题样式
         ((TextView) findViewById(R.id.title)).setText("填写手机号");
+
+
         et_username = (EditText)findViewById(R.id.sign_username);
         et_mobile_phone = (EditText)findViewById(R.id.sign_mobile_phone);
         et_password = (EditText)findViewById(R.id.sign_password);
         bt_sign =(Button) findViewById(R.id.sign);
+        bt_sign.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                phoneNums = et_mobile_phone.getText().toString();
+                username =  et_username.getText().toString();
+                password = et_password.getText().toString();
+
+                // 1. 通过规则判断手机号
+                if (!JudgePhoneNum.judgePhoneNums(SignActivity.this,phoneNums)) {
+                    return;
+                }
+                Intent intent = new Intent(SignActivity.this.getApplicationContext(),VerifyCode.class);
+                intent.putExtra("phoneNums",phoneNums);
+                intent.putExtra("username",username);
+                intent.putExtra("password",password);
+                startActivity(intent);
+            }
+        });
     }
+
 
 }
